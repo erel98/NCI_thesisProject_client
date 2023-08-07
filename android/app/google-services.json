@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390846633850",
+    "project_id": "faulttolerance",
+    "storage_bucket": "faulttolerance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390846633850:android:66ffc834b4eb5c78f728c3",
+        "android_client_info": {
+          "package_name": "com.example.faulttolerance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390846633850-roransv35u79b7msogrc2qn6sjnd2os3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCokM2-qB4JgbdqAlR_8hcHh8tYLWm781g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390846633850-roransv35u79b7msogrc2qn6sjnd2os3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
