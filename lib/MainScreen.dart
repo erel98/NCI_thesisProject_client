@@ -35,6 +35,11 @@ class _MainScreenState extends State<MainScreen> {
       isConnected = true;
       // Listen for the incoming messages from the server
       mainChannel!.stream.listen((message) async {
+        // This means the execution was completed successfully
+        if (!(message as String).contains('Latest') && !message.contains('{')) {
+          print('Execution completed in $message seconds');
+          return;
+        }
         // If message is a JSON formatted String, parse it
         if ((message as String).contains('{')) {
           var message_obj = jsonDecode(message);
@@ -75,7 +80,7 @@ class _MainScreenState extends State<MainScreen> {
           print(message);
           var diff = double.parse(message);
           var replication_time = diff + mainDiff;
-          print('Execution completed in ${scenario == "replication" ? replication_time : diff} seconds');
+          print('Execution completed in $replication_time seconds');
         } else {
           print('Received: $message');
         }
