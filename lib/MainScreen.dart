@@ -80,7 +80,7 @@ class _MainScreenState extends State<MainScreen> {
           print(message);
           var diff = double.parse(message);
           var replication_time = diff + mainDiff;
-          print('Execution completed in $replication_time seconds');
+          print('Execution completed in ${isCombined ? diff : replication_time} seconds');
         } else {
           print('Received: $message');
         }
